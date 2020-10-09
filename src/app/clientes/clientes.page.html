@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-menu-buttons></ion-menu-buttons>
+    </ion-buttons>
     <ion-title>clientes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let c for lista">
+      <ion-label>{{cliente.nome}}</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
